@@ -49,6 +49,7 @@ export default function Screen_02({ navigation, route }) {
           borderRadius: 20,
           fontWeight: '700',
           color: 'gray',
+          marginBottom:15
         }}
         placeholder="Enter your name ..."
       />
@@ -59,9 +60,13 @@ export default function Screen_02({ navigation, route }) {
           data={data}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
-            <View style={{ width: '300px', backgroundColor: 'red', padding: 15, margin: 3, borderRadius: 20 }}>
+            <View style={{ display: 'flex', backgroundColor: 'pink', flexDirection: 'row', justifyContent: 'space-between', width: 250, padding: 15, borderRadius: 20, marginBottom: 10 }}>
+            <View style={{ display: 'flex', flexDirection: 'row' }}>
+              <Image source={require('../mdi_marker-tick.png')} />
               <Text>{item.name}</Text>
             </View>
+            <Image source={require('../iconamoon_edit-bold.png')} />
+          </View>
           )}
           contentContainerStyle={{ flex: 1, width: '100%' }}
           scrollEnabled={true}

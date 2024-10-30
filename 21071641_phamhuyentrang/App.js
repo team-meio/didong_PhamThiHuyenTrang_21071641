@@ -16,10 +16,20 @@ import Screen_02Tool from './components/screen_02_toolkit';
 // }
 
 
+// export default function App() {
+//   return (
+//     <Provider store={store_toolkit}>
+//       <Screen_02Tool />
+//     </Provider>
+//   );
+// }
+
+import { RecoilRoot } from 'recoil';
+import Screen_02Recoil from './components/screen_02_recoil';
 export default function App() {
   return (
-    <Provider store={store_toolkit}>
-      <Screen_02Tool />
-    </Provider>
+    <RecoilRoot>
+      <Screen_02Recoil />
+    </RecoilRoot>
   );
 }
