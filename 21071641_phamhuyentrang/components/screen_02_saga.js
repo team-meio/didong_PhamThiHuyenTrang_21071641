@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchDataRequest } from '../redux/actions/index';
 
 export default function Screen_02({ navigation, route }) {
-  const name = "haule";
+  const name = "PhamHuyenTrang";
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data.data);
   const loading = useSelector((state) => state.data.loading);
